@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import "./style.css";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
+
 // import Accordion from '@mui/material/Accordion';
 const Maindiv = styled.div`
 width: 100%;
@@ -203,7 +205,11 @@ const MainLandingPage = () => {
                             <Type>(CELEBRITY  APPEARANCE)</Type>
                             <Place>Mumbai, Mahrashtra</Place>
                         </Aboutdiv>
-                        <Mainbtn><Btn>See Price And Book</Btn></Mainbtn>
+                        <Mainbtn>
+                            <Link to='/checkout'>
+                            <Btn>See Price And Book</Btn>
+                            </Link>
+                            </Mainbtn>
                         <div>
                             <Aboutpara>The 'ROCKSTAR' who is a heart throb of millions,
                                 Ranbir Kapoor is one of the finest actors in
@@ -312,7 +318,9 @@ const MainLandingPage = () => {
                     </Allimg>
                 </Imagesdiv>
                 <div style={{ textAlign: "center", marginTop: " 50px" }}>
-                    <Mainbtn><Btn>See Price And Book</Btn></Mainbtn>
+                    <Mainbtn><Link to='/checkout'>
+                            <Btn>See Price And Book</Btn>
+                            </Link></Mainbtn>
                 </div>
 
                 <FlexDiv onClick={()=>setBioactive(!bioactive)}>
