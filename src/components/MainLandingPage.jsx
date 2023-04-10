@@ -68,12 +68,18 @@ border-radius:10px;
 display:flex;
 align-items:center;
 justify-content:space-between;
+margin: 40px 0 20px;
 padding:10px;
 box-shadow: 1px 0 3px 6px rgba(158,158,158,.16);
 // height:60px;
 `
 const ContentDiv = styled.div`
-
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px;
+box-shadow: 1px 0 3px 6px rgba(158,158,158,.16);
 `
 const Aboutdiv = styled.div`
 margin-bottom: 25px;
@@ -189,7 +195,7 @@ const MainLandingPage = () => {
 
     const [modal, setModal] = useState(-1);
     const [accordian, setAccordian] = useState(false);
-    const [bioactive,setBioactive] = useState()
+    const [bioactive, setBioactive] = useState()
     return (
         <>
             <Maindiv>
@@ -315,97 +321,147 @@ const MainLandingPage = () => {
                     <Mainbtn><Btn>See Price And Book</Btn></Mainbtn>
                 </div>
 
-                <FlexDiv onClick={()=>setBioactive(!bioactive)}>
-                    <div style={{display:"flex",alignItems:"center"}}>
-                    <img style={{margin: "0 15px 0 0"}}src='https://stcdn.starclinch.in/mobile/images/profile/biography_icon.svg'/>
-                    <div>
-                        Biography
+                <FlexDiv onClick={() => setBioactive(!bioactive)}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                        <img style={{ margin: "0 15px 0 0" }} src='https://stcdn.starclinch.in/mobile/images/profile/biography_icon.svg' />
+                        <div>
+                            Biography
+                        </div>
                     </div>
-                    </div>
-                    <img src='down.png' style={bioactive ? {transform:'rotate(180deg)'} : {}}/>
+                    <img src='down.png' style={bioactive ? { transform: 'rotate(180deg)' } : {}} />
                 </FlexDiv>
                 {bioactive &&
                     <ContentDiv>
-                         Ranbir Kapoor is a Bollywood Superstar.&nbsp;A recipient of several
-          accolades including five FILMFARE AWARDS, he is one of the most
-          popular and highest paid celebrities in India. He&nbsp;is the grandson
-          of well acclaimed Actor-Director Raj Kapoor&nbsp;and the son
-          of&nbsp;actors&nbsp;Neetu Kapoor&nbsp;&amp;&nbsp;Rishi Kapoor. At
-          the&nbsp;LEE&nbsp;STRASBERG&nbsp;and THEATER AND FILM
-          INSTITUTE&nbsp;&amp;&nbsp;SCHOOL OF VISUAL ARTS,&nbsp;Ranbir pursued
-          film-making and method acting respectively, following which he
-          assisted&nbsp;SANJAY&nbsp;LEELA&nbsp;BHANSALI&nbsp;on the
-          film&nbsp;BLACK&nbsp;(2005). &nbsp;
-          Ranbir&nbsp;Kapoor&nbsp;kick-started his acting debut
-          with&nbsp;Bhansali's&nbsp;Tragic-Romance&nbsp;SAAWARIYA&nbsp;(2007), a
-          performance&nbsp;so ecstatic that he
-          bagged&nbsp;a&nbsp;Filmfare&nbsp;Award for THE BEST MALE DEBUT &nbsp;
-          3 hit flicks,&nbsp;namely
-          Ajab&nbsp;Prem&nbsp;Ki&nbsp;Ghazab&nbsp;Kahani,&nbsp;Rocket&nbsp;Singh-Salesman&nbsp;Of&nbsp;The&nbsp;Year&nbsp;&amp;&nbsp;Wake&nbsp;Up&nbsp;Sid&nbsp;earned&nbsp;him
-          3&nbsp;Filmfare&nbsp;Critics&nbsp;Awards&nbsp;for Best Actor
-          Ranbir&nbsp;Kapoor’s award winning spree&nbsp;was extended with 2 BEST
-          ACTOR&nbsp;awards at&nbsp;FILMFARE&nbsp;with stellar performances in
-          ROCKSTAR&nbsp;(Drama, 2011) and BARFI (Drama-Comedy, 2012), where he
-          played a troubled musician and a deaf-mute man respectively &nbsp; He
-          further proved his versatile acting skills by engaging the audiences
-          in films
-          like&nbsp;BOMBAY&nbsp;TALKIES&nbsp;(Appearance),&nbsp;YEH&nbsp;JAWAANI&nbsp;HAI&nbsp;DIWANI&nbsp;(RomanticComedy,2013)
-          &amp;&nbsp;RAJNEETI&nbsp;(Drama, 2010) &nbsp; Films aside,
-          Kapoor&nbsp;is a stern supporter of charitable causes and initiatives.
-          He happens to be the Co-Owner of&nbsp;the&nbsp;INDIAN SUPER
-          LEAGUE&nbsp;football team,&nbsp;MUMBAI CITY FC&nbsp;and
-          the&nbsp;Co-Founder of &nbsp;Picture&nbsp;Shuru&nbsp;Productions
+                        Ranbir Kapoor is a Bollywood Superstar.&nbsp;A recipient of several
+                        accolades including five FILMFARE AWARDS, he is one of the most
+                        popular and highest paid celebrities in India. He&nbsp;is the grandson
+                        of well acclaimed Actor-Director Raj Kapoor&nbsp;and the son
+                        of&nbsp;actors&nbsp;Neetu Kapoor&nbsp;&amp;&nbsp;Rishi Kapoor. At
+                        the&nbsp;LEE&nbsp;STRASBERG&nbsp;and THEATER AND FILM
+                        INSTITUTE&nbsp;&amp;&nbsp;SCHOOL OF VISUAL ARTS,&nbsp;Ranbir pursued
+                        film-making and method acting respectively, following which he
+                        assisted&nbsp;SANJAY&nbsp;LEELA&nbsp;BHANSALI&nbsp;on the
+                        film&nbsp;BLACK&nbsp;(2005). &nbsp;
+                        Ranbir&nbsp;Kapoor&nbsp;kick-started his acting debut
+                        with&nbsp;Bhansali's&nbsp;Tragic-Romance&nbsp;SAAWARIYA&nbsp;(2007), a
+                        performance&nbsp;so ecstatic that he
+                        bagged&nbsp;a&nbsp;Filmfare&nbsp;Award for THE BEST MALE DEBUT &nbsp;
+                        3 hit flicks,&nbsp;namely
+                        Ajab&nbsp;Prem&nbsp;Ki&nbsp;Ghazab&nbsp;Kahani,&nbsp;Rocket&nbsp;Singh-Salesman&nbsp;Of&nbsp;The&nbsp;Year&nbsp;&amp;&nbsp;Wake&nbsp;Up&nbsp;Sid&nbsp;earned&nbsp;him
+                        3&nbsp;Filmfare&nbsp;Critics&nbsp;Awards&nbsp;for Best Actor
+                        Ranbir&nbsp;Kapoor’s award winning spree&nbsp;was extended with 2 BEST
+                        ACTOR&nbsp;awards at&nbsp;FILMFARE&nbsp;with stellar performances in
+                        ROCKSTAR&nbsp;(Drama, 2011) and BARFI (Drama-Comedy, 2012), where he
+                        played a troubled musician and a deaf-mute man respectively &nbsp; He
+                        further proved his versatile acting skills by engaging the audiences
+                        in films
+                        like&nbsp;BOMBAY&nbsp;TALKIES&nbsp;(Appearance),&nbsp;YEH&nbsp;JAWAANI&nbsp;HAI&nbsp;DIWANI&nbsp;(RomanticComedy,2013)
+                        &amp;&nbsp;RAJNEETI&nbsp;(Drama, 2010) &nbsp; Films aside,
+                        Kapoor&nbsp;is a stern supporter of charitable causes and initiatives.
+                        He happens to be the Co-Owner of&nbsp;the&nbsp;INDIAN SUPER
+                        LEAGUE&nbsp;football team,&nbsp;MUMBAI CITY FC&nbsp;and
+                        the&nbsp;Co-Founder of &nbsp;Picture&nbsp;Shuru&nbsp;Productions
                     </ContentDiv>
                 }
 
-<FlexDiv onClick={()=>setBioactive(!bioactive)}>
-                    <div style={{display:"flex",alignItems:"center"}}>
-                    <img style={{margin: "0 15px 0 0"}}src='https://stcdn.starclinch.in/mobile/images/profile/biography_icon.svg'/>
-                    <div>
-                        Biography
+                <FlexDiv onClick={() => setBioactive(!bioactive)}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                        <img style={{ margin: "0 15px 0 0" }} src='https://stcdn.starclinch.in/mobile/images/profile/Performance_Details.svg' />
+                        <div>
+                            Performance Details
+                        </div>
                     </div>
-                    </div>
-                    <button style={bioactive ? {transform:'rotate(180deg)'} : {}}>
-                        <img src='./src/Assets/arrow.jpg'/>
-                    </button> 
+                    {/* <button style={bioactive ? { transform: 'rotate(180deg)' } : {}}> */}
+                    <img src='down.png' style={bioactive ? { transform: 'rotate(180deg)' } : {}} />
+                    {/* </button> */}
                 </FlexDiv>
                 {bioactive &&
                     <ContentDiv>
-                         Ranbir Kapoor is a Bollywood Superstar.&nbsp;A recipient of several
-          accolades including five FILMFARE AWARDS, he is one of the most
-          popular and highest paid celebrities in India. He&nbsp;is the grandson
-          of well acclaimed Actor-Director Raj Kapoor&nbsp;and the son
-          of&nbsp;actors&nbsp;Neetu Kapoor&nbsp;&amp;&nbsp;Rishi Kapoor. At
-          the&nbsp;LEE&nbsp;STRASBERG&nbsp;and THEATER AND FILM
-          INSTITUTE&nbsp;&amp;&nbsp;SCHOOL OF VISUAL ARTS,&nbsp;Ranbir pursued
-          film-making and method acting respectively, following which he
-          assisted&nbsp;SANJAY&nbsp;LEELA&nbsp;BHANSALI&nbsp;on the
-          film&nbsp;BLACK&nbsp;(2005). &nbsp;
-          Ranbir&nbsp;Kapoor&nbsp;kick-started his acting debut
-          with&nbsp;Bhansali's&nbsp;Tragic-Romance&nbsp;SAAWARIYA&nbsp;(2007), a
-          performance&nbsp;so ecstatic that he
-          bagged&nbsp;a&nbsp;Filmfare&nbsp;Award for THE BEST MALE DEBUT &nbsp;
-          3 hit flicks,&nbsp;namely
-          Ajab&nbsp;Prem&nbsp;Ki&nbsp;Ghazab&nbsp;Kahani,&nbsp;Rocket&nbsp;Singh-Salesman&nbsp;Of&nbsp;The&nbsp;Year&nbsp;&amp;&nbsp;Wake&nbsp;Up&nbsp;Sid&nbsp;earned&nbsp;him
-          3&nbsp;Filmfare&nbsp;Critics&nbsp;Awards&nbsp;for Best Actor
-          Ranbir&nbsp;Kapoor’s award winning spree&nbsp;was extended with 2 BEST
-          ACTOR&nbsp;awards at&nbsp;FILMFARE&nbsp;with stellar performances in
-          ROCKSTAR&nbsp;(Drama, 2011) and BARFI (Drama-Comedy, 2012), where he
-          played a troubled musician and a deaf-mute man respectively &nbsp; He
-          further proved his versatile acting skills by engaging the audiences
-          in films
-          like&nbsp;BOMBAY&nbsp;TALKIES&nbsp;(Appearance),&nbsp;YEH&nbsp;JAWAANI&nbsp;HAI&nbsp;DIWANI&nbsp;(RomanticComedy,2013)
-          &amp;&nbsp;RAJNEETI&nbsp;(Drama, 2010) &nbsp; Films aside,
-          Kapoor&nbsp;is a stern supporter of charitable causes and initiatives.
-          He happens to be the Co-Owner of&nbsp;the&nbsp;INDIAN SUPER
-          LEAGUE&nbsp;football team,&nbsp;MUMBAI CITY FC&nbsp;and
-          the&nbsp;Co-Founder of &nbsp;Picture&nbsp;Shuru&nbsp;Productions
+                        <div style={{ backgroundColor: "#fff", padding: "14px 15px", borderRadius: "15px" }}>
+                            <div style={{ display: "flex", flexWrap: "wrap" }}>
+                                <div style={{ backgroundColor: "##e3f8fa" }}>
+                                    <div><img src='https://stcdn.starclinch.in/mobile/images/profile/offstage_members_new.svg' /></div>
+                                    <b>
+                                        <h3 style={{ color: "#26c6da" }}>4</h3>
+                                        <p style={{ color: "#26c6da", fontWeight: "300" }}>Off Stage Members</p>
+                                    </b>
+                                </div>
+                                <div style={{ color: "#f36" }}>
+                                    <div><img src='https://stcdn.starclinch.in/mobile/images/profile/performing_members_new.svg' /></div>
+                                    <div style={{ color: "#f36" }}>1</div>
+                                    <div style={{ color: "#f36" }}>Performing Members</div>
+                                </div>
+                                <div style={{ color: "#be63f9" }}>
+                                    <div><img src='https://stcdn.starclinch.in/mobile/images/profile/performance_min_duration_new.svg' /></div>
+                                    <div style={{ color: "#be63f9" }}>60 - 120 Min</div>
+                                    <div style={{ color: "#be63f9" }}>Performance Duration</div>
+                                </div>
+                                <div style={{ color: "#ffb148" }}>
+                                    <div><img src='https://stcdn.starclinch.in/mobile/images/profile/can_travel_new.svg' /></div>
+                                    <div style={{ color: "#ffb148" }}>Can Travel</div>
+                                    <div style={{ color: "#ffb148" }}>Nationwide</div>
+                                </div>
+                            </div>
+                        </div>
                     </ContentDiv>
                 }
+
+                <FlexDiv onClick={() => setBioactive(!bioactive)}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                        <img style={{ margin: "0 15px 0 0" }} src='https://stcdn.starclinch.in/mobile/images/profile/performance_language_v2.svg' />
+                        <div>
+                            Performance Language
+                        </div>
+                    </div>
+                    <img src='down.png' style={bioactive ? { transform: 'rotate(180deg)' } : {}} />
+                </FlexDiv>
+                {bioactive &&
+                    <ContentDiv>
+                        <div style={{ backgroundColor: "#fff", padding: "14px 15px", borderRadius: "15px", boxShadow: "0 3px 10px rgba(0,0,0,.1)", display: "flex" }}>
+                            <div>
+                                <div><img src='https://starclinch.com/static/mobile/images/language_icons/English.svg' /></div>
+                                <p>English</p>
+                            </div>
+                            <div>
+                                <div><img src='https://starclinch.com/static/mobile/images/language_icons/Hindi.svg' /></div>
+                                <p>Hindi</p>
+                            </div>
+                        </div>
+                    </ContentDiv>
+                }
+
+                <FlexDiv onClick={() => setBioactive(!bioactive)}>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                        <img style={{ margin: "0 15px 0 0", width:"32px",height:"32px"}} src='https://starclinch.com/static/mobile/images/profile/review_icon.svg' />
+                        <div>
+                            Review
+                        </div>
+                    </div>
+                    <img src='down.png' style={bioactive ? { transform: 'rotate(180deg)' } : {}} />
+                </FlexDiv>
+                {bioactive &&
+                    <ContentDiv>
+                        <div style={{ backgroundColor: "#fff", padding: "14px 15px", borderRadius: "15px", boxShadow: "0 3px 10px rgba(0,0,0,.1)", display: "flex" }}>
+                            <div>
+                            </div>
+                        </div>
+                    </ContentDiv>
+                }
+
+                <div style={{margin:"50px 0 0"}}>
+                     <div style={{display:"flex", alignItems:"center", margin: "0 0 30px"}}>
+                        <div style={{margin: "0 15px 0 0"}}><img src='https://stcdn.starclinch.in/mobile/images/profile/similar_artist_icon_v2.svg'/></div>
+                        <h4 style={{fontWeight:"500" ,fontSize:"20px"}}> Similar Artists you may like</h4>
+                    </div>
+                </div>
+
+                <div style={{margin:"50px 0 0"}}>
+                    <div>You might be interested in</div>
+                </div>
             </Maindiv>
 
 
-   
+
         </>
     )
 }
