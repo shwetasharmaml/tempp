@@ -1,0 +1,20 @@
+*{
+    font-family:montserrat,Arial, Helvetica, sans-serif;
+}
+.App{
+    column-count: 4;
+    margin: 0 auto;
+}
+.content_image{
+    width: 252px;
+     border-radius: 6px;
+}
+@media (max-width: 1200px) {
+    .App{
+        column-count: 2; 
+    }
+    .content_image{
+        width: 97%;
+         border-radius: 6px;
+    }  
+}
