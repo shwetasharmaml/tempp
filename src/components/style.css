@@ -18,3 +18,116 @@
          border-radius: 6px;
     }  
 }
+.icon{
+     width: 21px;
+     height: 24px;
+}
+.MainBox{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 14px 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    border-radius: 15px;
+}
+.LangImg{
+    width: 62px;
+    margin: 0 auto 10px;
+}
+.Subject{
+    text-align: center;
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+.ImgTop{
+    width: 255px;
+    margin-right: 20px;
+}
+.Performance{
+    background-color: #e3f8fa;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 10px;
+     min-width:24%;
+    padding-right:15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.Performing{
+    background-color: #ffe6e2;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 10px;
+    min-width:24%;
+    padding-right:15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.Duration{
+    background-color: #f5e6fe;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 10px;
+    min-width:24%;
+    padding-right:15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.Travel{
+    background-color: #fff1c0;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 10px;
+     min-width:24%;
+    padding-right:15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  button span{
+    font-size: 35px;
+  }
+  .on {
+    color: #ff6b6b!important;
+  }
+  .off {
+    color:#ff6b6b66;
+  }
+
+
+  /* carousel css */
+
+  .rec-arrow{
+    display: none;
+  }
+  .post{
+    background-color: #0a3fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 25px;
+  }
+  .rec-dot_active{
+background-color: #000 !important;
+box-shadow: rgb(0 0 0) 0px 0px 1px 3px !important;
+  }
+  .rec-dot:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 1px 2px !important;
+      }
+ .MainText{padding: 10px 15px;
+    height: auto;
+    width:100%;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    box-shadow: 0 3px 28px rgba(0,0,0,.16);
+    border: 0;
+    color: #191818;
+    resize: none;
+    font-size: 20px; }
